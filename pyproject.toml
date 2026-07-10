@@ -1,0 +1,11 @@
+[project]
+name = "amd-routing-agent"
+version = "0.1.0"
+description = "ByteRoute Token-Efficient Routing Agent"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.27.0",
+    "llama-cpp-python>=0.3.33",
+    "python-dotenv>=1.0.1",
+]
