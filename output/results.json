@@ -1,0 +1,78 @@
+[
+    {
+        "task_id": "t-01",
+        "answer": "The capital of Japan is Tokyo. It is known for its vibrant blend of ultramodern skyscrapers, historic temples, neon-lit nightlife, and world-class cuisine."
+    },
+    {
+        "task_id": "t-02",
+        "answer": "Monday's production is 600 units after a 20% increase. Tuesday's production is 550 units after decreasing by 50 units."
+    },
+    {
+        "task_id": "t-03",
+        "answer": "Positive. The text highlights the laptop's impressive speed and beautiful display using highly complimentary language."
+    },
+    {
+        "task_id": "t-04",
+        "answer": "Mixed: The review praises the room's cleanliness while simultaneously criticizing the staff's rudeness."
+    },
+    {
+        "task_id": "t-05",
+        "answer": "Negative. The text expresses an unfavorable opinion using words like: hate."
+    },
+    {
+        "task_id": "t-06",
+        "answer": "The Amazon River, Earth's largest by water discharge, flows through nine South American countries and hosts thousands of unique fish, bird, and mammal species."
+    },
+    {
+        "task_id": "t-07",
+        "answer": "Photosynthesis uses sunlight, water, and carbon dioxide to produce oxygen and glucose energy in plants."
+    },
+    {
+        "task_id": "t-08",
+        "answer": "Elon Musk (Person)\nSpaceX (Organization)\nHawthorne, California (Location)\n2002 (Date)"
+    },
+    {
+        "task_id": "t-09",
+        "answer": "Angela Merkel (Person)\nGermany (Organization)\n2005 (Date)\n2021 (Date)"
+    },
+    {
+        "task_id": "t-10",
+        "answer": "```python\ndef get_sum(nums):\n    return sum(nums)\n```\nUse the built-in `sum()` function to add all elements."
+    },
+    {
+        "task_id": "t-11",
+        "answer": "```python\ndef reverse_str(s):\n    return s[::-1]\n```\nReverses the string using Python slicing."
+    },
+    {
+        "task_id": "t-12",
+        "answer": "```python\ndef is_palindrome(s: str) -> bool:\n    return s == s[::-1]\n```"
+    },
+    {
+        "task_id": "t-13",
+        "answer": "```python\ndef fibonacci(n):\n    if n <= 0:\n        return []\n    if n == 1:\n        return [0]\n    \n    sequence = [0, 1]\n    for _ in range(2, n):\n        sequence.append(sequence[-1] + sequence[-2])\n    \n    return sequence\n```"
+    },
+    {
+        "task_id": "t-14",
+        "answer": "Carol drinks juice."
+    },
+    {
+        "task_id": "t-15",
+        "answer": "The possible orders are R-P-Q-S, R-Q-P-S, S-P-Q-R, or S-Q-P-R."
+    },
+    {
+        "task_id": "t-16",
+        "answer": "Photosynthesis is the process by which plants, algae, and certain bacteria convert sunlight, water, and carbon dioxide into oxygen and energy-rich sugars. It is crucial for life on Earth because it produces the oxygen required for most organisms to breathe and serves as the foundational energy source for nearly all food webs."
+    },
+    {
+        "task_id": "t-17",
+        "answer": "A neural network learns by processing data to make predictions, measuring the error of those predictions, and using backpropagation to adjust its internal weights. This iterative cycle repeats until the network minimizes its error and accurately maps inputs to outputs."
+    },
+    {
+        "task_id": "t-18",
+        "answer": "The result of the calculation is 42."
+    },
+    {
+        "task_id": "t-19",
+        "answer": "Calculation evaluates to 50 because 25.0% of 200.0 is 50."
+    }
+]

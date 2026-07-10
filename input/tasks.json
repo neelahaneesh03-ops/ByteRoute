@@ -1,0 +1,21 @@
+[
+  {"task_id": "t-01", "prompt": "What is the capital of Japan and what is it known for?"},
+  {"task_id": "t-02", "prompt": "A factory produces 500 units per day. It increases production by 20% on Monday and decreases by 50 units on Tuesday. How many units are produced on Tuesday?"},
+  {"task_id": "t-03", "prompt": "Classify the sentiment of this review: This laptop is incredibly fast and the display is stunning."},
+  {"task_id": "t-04", "prompt": "Classify the sentiment of this review: The hotel room was clean, but the staff was incredibly rude."},
+  {"task_id": "t-05", "prompt": "Classify the sentiment of this review: I absolutely hate this product, it broke after one day."},
+  {"task_id": "t-06", "prompt": "Summarize the following in exactly one sentence: The Amazon River is the largest river in the world by water discharge, flowing through nine countries in South America and home to thousands of unique species of fish, birds, and mammals."},
+  {"task_id": "t-07", "prompt": "Summarize the following in exactly one sentence: Photosynthesis is the process by which plants use sunlight, water, and carbon dioxide to produce oxygen and energy in the form of glucose."},
+  {"task_id": "t-08", "prompt": "Extract all named entities and their types from: Elon Musk founded SpaceX in Hawthorne, California in 2002."},
+  {"task_id": "t-09", "prompt": "Extract all named entities and their types from: Angela Merkel served as Chancellor of Germany from 2005 to 2021."},
+  {"task_id": "t-10", "prompt": "This function should return the sum of a list but has a bug: def get_sum(nums): return nums[0]. Find and fix it."},
+  {"task_id": "t-11", "prompt": "This function should reverse a string but has a bug: def reverse_str(s): return s. Find and fix it."},
+  {"task_id": "t-12", "prompt": "Write a Python function that checks if a given string is a palindrome."},
+  {"task_id": "t-13", "prompt": "Write a Python function that returns the Fibonacci sequence up to n terms."},
+  {"task_id": "t-14", "prompt": "Alice, Bob, and Carol each prefer a different drink: coffee, tea, juice. Alice does not drink juice. Bob drinks coffee. What does Carol drink?"},
+  {"task_id": "t-15", "prompt": "Four people sit in a row: P, Q, R, S. P sits next to Q. R sits at one end. S does not sit next to R. What is the order?"},
+  {"task_id": "t-16", "prompt": "What is photosynthesis and why is it important for life on Earth?"},
+  {"task_id": "t-17", "prompt": "Explain how a neural network learns from data."},
+  {"task_id": "t-18", "prompt": "What is 15 + 27?"},
+  {"task_id": "t-19", "prompt": "What is 25% of 200?"}
+]
