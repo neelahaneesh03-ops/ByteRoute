@@ -35,3 +35,31 @@ docker run --rm \
 ## Tech Stack
 
 Python 3.12, asyncio, httpx, Docker (linux/amd64), Fireworks AI, GLM 5.2, uv
+
+## 🔮 Future Roadmap
+
+Now that ByteRoute has evolved beyond its hackathon constraints, the following architectural upgrades are planned to transform it from a functional prototype into a robust, general-purpose LLM Routing Middleware:
+
+### 1. Shift from Heuristic to Learned Routing (Embedding Classifier)
+* **Objective:** Replace static regex/keyword rules with a semantic intent classifier to remove manual maintenance overhead.
+* **Scope:** Implement a micro-embedding model (e.g., a tiny, 10ms local sentence encoder) to map incoming prompt vectors against semantic clusters (such as `DevOps`, `Data Extraction`, or `Code Optimization`). Prompts will be dynamically dispatched to the optimal tier based on real-time complexity scoring rather than brittle string matching.
+
+### 2. Implement Outcome-Based Cascades (Validation Loops)
+* **Objective:** Stop guessing whether a local model can handle a nuanced task—let it try, and programmatically verify the output.
+* **Scope:** Build a localized Context-Action-Feedback (C-A-F) loop. For highly structured tasks like JSON schema mapping, the local Qwen-0.5B instance will execute the initial action. A rule-based local verifier will inspect the response structure; if a syntax or schema validation exception triggers, the system will transparently escalate the task to the cloud tier.
+
+### 3. Input Trimming & Context Optimization Engine
+* **Objective:** Strip out unnecessary token bloat before payloads ever hit the network layer.
+* **Scope:** Build a pre-dispatch optimization middleware. The engine will programmatically minify tool schemas, compress repetitive chat history, strip redundant whitespaces, and pack sparse JSON arrays into dense columnar structures, reducing outbound cloud token consumption by an additional 30% to 70% with zero semantic loss.
+
+### 4. Continuous Performance Ledger (Stateful Session Memory)
+* **Objective:** Enable the router to learn organically from execution-grounded experience.
+* **Scope:** Integrate a low-latency local storage backend (SQLite/Redis) to act as a permanent performance ledger. By logging transaction metrics like token throughput, latency variations, and verification pass/fail flags, the orchestrator can dynamically recalibrate its routing confidence parameters based on running historical data.
+
+### 5. Multi-Model Consensus & Variant Fusion
+* **Objective:** Match frontier-class accuracy thresholds using an aggregated budget panel of smaller open-weight models.
+* **Scope:** Implement an algorithmic ensemble layer. For highly sensitive reasoning or code review pipelines, the router will query multiple allowed lightweight models concurrently and pass the results to a localized consensus judge to synthesize a single optimized response at a fraction of the cost of a premier frontier model.
+
+### 6. Edge Infrastructure & Low-Resource Stress Testing
+* **Objective:** Validate real-world deployability on genuinely constrained environments, moving past "does it technically run on a high-spec development machine."
+* **Scope:** Profile peak Resident Set Size (RSS) memory utilization of the local GGUF layer under heavy concurrent load rather than resting footprint. Execute automated benchmarks against severely throttled environments (`docker run --memory=2g --cpus=1`) and physical edge nodes (e.g., Raspberry Pi) to pinpoint the precise crossover threshold where local validation cycles cost more in latency than a direct API call.
